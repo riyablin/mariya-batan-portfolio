@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <link rel="canonical" href="https://mariyabatan.com/" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=https://mariyabatan.com/" />
+    <script>
+      // переносим query и hash (HashRouter-роуты вроде #/portfolio) на новый домен
+      var dest = "https://mariyabatan.com/" + (location.search || "") + (location.hash || "");
+      location.replace(dest);
+    </script>
+  </head>
+  <body>
+    Сайт переехал на <a href="https://mariyabatan.com/">mariyabatan.com</a>. Перенаправляю…
+  </body>
+</html>
